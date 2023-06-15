@@ -1,10 +1,18 @@
 package com.unicauca.architecture_hexagonal.domain.ports.outputs;
 
 import com.unicauca.architecture_hexagonal.domain.models.Task;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Interfaz que define los métodos para la gestión de tareas de un servicio externo(base de datos),
+ *  *            es importante aclarar que este puerto es tipo de salida o secundario
+ * @ClassName: TaskRepositoryPort
+ * @Autor: Nicolas Muñoz
+ */
+@Component
 public interface TaskRepositoryPort {
     /**
      * Guardar tarea
